@@ -1,25 +1,63 @@
 {
-  "name": "call-whisper",
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "sample-voice-nodejs-call-whisper",
   "description": "An example application that shows how to use the Nexmo Voice API on how to add Call Whispers to any call.",
   "version": "1.0.0",
   "main": "./lib/server.js",
-  "author": "Cristiano betta <cristiano@betta.io> (http://betta.io)",
+  "contributors": [
+    {
+      "name": "Cristiano Betta",
+      "url": "https://github.com/cbetta"
+    },
+    {
+      "name": "Lorna Jane Mitchell",
+      "url": "https://github.com/lornajane"
+    },
+    {
+      "name": "Ilija",
+      "url": "https://github.com/Archaeologist03"
+    },
+    {
+      "name": "Phil Leggetter",
+      "url": "https://github.com/leggetter"
+    },
+    {
+      "name": "Alex Lakatos",
+      "url": "https://github.com/AlexLakatos"
+    },
+    {
+      "name": "Chuck \"MANCHUCK\" Reeves",
+      "url": "https:github.com/manchuck"
+    }
+  ],
   "scripts": {
+    "eslint": "eslint",
     "start": "nodemon ./lib/server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "sms",
     "proxy",
-    "nexmo"
+    "vonage"
   ],
-  "repository": "https://github.com/Nexmo/node-call-whispher",
+  "repository": "https://github.com/Vonage-Community/sample-voice-nodejs-call-whisper",
   "dependencies": {
-    "dotenv": "^4.0.0",
-    "express": "^4.14.1"
+    "body-parser": "1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "@eslint/js": "9.18.0",
+    "@stylistic/eslint-plugin-js": "2.13.0",
+    "eslint-plugin-jest": "28.11.0",
+    "eslint-plugin-n": "17.15.1",
+    "globals": "15.14.0",
+    "nodemon": "^3.1.9"
   }
 }
